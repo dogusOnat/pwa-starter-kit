@@ -20,3 +20,11 @@ steps:
     npm install
     npx webpack --config webpack.config.js
   displayName: 'npm install, run webpack'
+
+- script: |
+    npm build:webpack
+  displayName: 'npm build webpack'
+  
+- script: |
+    npm test
+	 displayName: 'Run test'
