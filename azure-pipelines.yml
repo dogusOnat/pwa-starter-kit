@@ -22,9 +22,5 @@ steps:
   displayName: 'npm install, run webpack'
 
 - script: |
-    npm build:webpack
-  displayName: 'npm build webpack'
-  
-- script: |
     npm test
   displayName: 'Run test'
