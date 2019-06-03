@@ -11,7 +11,7 @@
     "start:webpack": "webpack-dev-server --open --mode development",
     "build": "polymer build --auto-base-path && gulp prpl-server",
     "build:static": "polymer build",
-    "build:webpack": "rm -rf dist && webpack --config webpack.config.js",
+    "build:webpack": "del dist && webpack --config webpack.config.js",
     "serve": "prpl-server --root server/build",
     "serve:static": "polymer serve --port 5000 build/es5-bundled",
     "serve:webpack": "polymer serve --port 3000 dist",
