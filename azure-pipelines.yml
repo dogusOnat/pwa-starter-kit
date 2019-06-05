@@ -22,10 +22,11 @@ steps:
   displayName: 'npm install, run webpack'
 
 - script: |
+    npm build:webpack
+  displayName: 'Build webpack'
+
+- script: |
     npm test
   displayName: 'Run test'
 
-- task: PublishCodeCoverageResults@1
-  inputs:
-    codeCoverageTool: 'JaCoCo'
-    summaryFileLocation: 'hgfh'
+ 
